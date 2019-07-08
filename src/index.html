@@ -3,11 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>webpack starterkit</title>
+  <title>Sunciti game</title>
 </head>
 <body>
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
-  <!-- <script src="./scripts/index.js"></script> -->
+  <header class="header">
+    <div class="page-title">
+      <h2> The SunCiti Game</h2>
+      <p >✨ A lightweight game for your mobile device.</p>
+      <p id="author">By PJ Adoga</p>
+    </div> 
+    <nav class="home-nav "> 
+        <ul class="unstyled">
+          <li class="inline" ><button href= "#" hover><span class="fa fa-home"></span>Home</button></li>
+          <li class="inline"><button href="#" hover>Credit</button></li>
+        </ul> 
+    </nav>
+    <div class="search">
+      <form novalidate action="#" method="get" >
+        <!-- <label class="h3">Search</label> -->
+        <input class="form-control" type="search" name="result" id="search-text" placeholder="search this site" autofocus>
+      </form>
+    </div>
+  </header>
+  <main>
+    <!-- <article>-->
+      <section> 
+        <!-- split the display into two columns -->
+        <div id="title" class="two-column-count">Welcome to SunCiti Game</div>
+        <div id="result"></div>
+        <button type="submit" id="new-game" class="btn-lg btn-success">New Game</button>
+        <button type="submit" id="hit-button" class="btn-lg btn-warning">New Card</button>
+        <button type="submit" id="stay-button"class="btn-lg btn-danger">Check</button>
+      </section>
+     
+      <section class="form1 ">
+        <form action="index.html" method="post">
+          <div>
+            <label>Name:</label>
+            <input type="text" placeholder="your name" name="name" class="form-control col-sm-12" required>
+          </div>
+          <div>
+            <label>Name:</label>
+            <input type="email" placeholder="your email" name="email" class="form-control" required>
+          </div>
+          <div>
+            <label>Name:</label>
+            <input type="password" name="password" id="password" class="form-control" required>
+          </div>
+          <div>
+            <label>Name:</label>
+            <input type="url" name="website" id="website" class="form-control" required>
+          </div>
+          <div>
+            <label>Name:</label>
+            <input required type="datetime" name="dob" id="dob" value="date" placeholder="date of birth" class="form-control">
+          </div>
+          <div>
+            <label>Name:</label>
+            <input required type="image" src="./index.html" alt="my image" placeholder="your image here" class="form-control">
+          </div>
+          <div>
+            <label>Name:</label>
+            <input type="range" name="age" min="20" max="100" id="age" step="10" value="10" class="form-control" required>
+          </div>
+          <div>
+            <label>Name:</label>
+            <input type="color" name="favColor" id="favColor" class="form-control" required>
+          </div>
+          <div>
+            <label>Gender:</label>
+            <input type="checkbox" name="gender" id="genderM" value="male" class="form-control" required><span>Male</span>
+          </div>
+          <div>
+            <input type="checkbox" name="gender" id="genderF" value="female" class="form-control" required><span>Female</span>
+          </div>
+          <div>
+            <label>Profile Pics:</label>
+            <input type="file" name="profpic" id="profpic" value="pic" class="form-control">
+          </div>
+          <div>
+            <input type="submit" value="submit" class="btn btn-secondary">
+          </div>
+        </form>
+      </section>
+      <aside class=" aside">
+        this is an aside content
+      </aside>
+       
+    <!-- </article>  -->
+  </main>
+  <footer>
+    <h1>This is the site footer</h1>
+    <div class="container row justify-content-between" >
+      <div class="center col-xs-3">
+        <ul>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+        </ul>
+      </div>
+      <div class=" col-xs-3">
+        <ul>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+        </ul>
+      </div>
+      <div class=" col-xs-3">
+        <ul>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+          <li>Reach us</li>
+        </ul>
+      </div>
+    </div>  
+  </footer>
 </body>
 </html>
